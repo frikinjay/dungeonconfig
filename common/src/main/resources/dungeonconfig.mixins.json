@@ -1,0 +1,23 @@
+{
+  "required": true,
+  "package": "com.frikinjay.dungeonconfig.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "minVersion": "0.8",
+  "client": [
+    "client.ChannelAccessor",
+    "client.KeyMappingMixin",
+    "client.MinecraftMixin",
+    "client.MusicManagerMixin",
+    "client.NativeImageAccessor",
+    "client.OptionsMixin",
+    "client.SoundBufferLibraryMixin",
+    "client.SoundEngineAccessor",
+    "client.SoundManagerAccessor",
+    "client.TitleScreenMixin"
+  ],
+  "mixins": [
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,3 @@
+Sanctum Pixel (sanctum_pixel.ttf, sanctum_pixel_bold.ttf)
+Drawn for Sanctum by frikinjay. The glyph drawings and build script live in the Sanctum project.
+Free to use in your own mods and resource packs, credit appreciated.

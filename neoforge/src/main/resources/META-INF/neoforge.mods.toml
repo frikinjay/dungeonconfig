@@ -1,0 +1,31 @@
+issueTrackerURL = "https://github.com/frikinjay/dungeonconfig/issues"
+license = "LGPL3.0"
+
+[[mods]]
+modId = "dungeonconfig"
+version = "${version}"
+displayName = "Dungeon Config"
+authors = "frikinjay"
+description = '''
+A Minecraft Dungeons styled config library: JSON5 configs in config/<modid>, a settings screen with backgrounds and music, and server synced settings.
+'''
+logoFile = "icon.png"
+# The settings sync is optional, so the server list shouldn't flag a missing or different version
+displayTest = "IGNORE_ALL_VERSION"
+
+[[dependencies.dungeonconfig]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.1.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies.dungeonconfig]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.1.2,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[mixins]]
+config = "dungeonconfig.mixins.json"

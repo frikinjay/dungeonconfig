@@ -1,0 +1,44 @@
+{
+  "schemaVersion": 1,
+  "id": "dungeonconfig",
+  "version": "${version}",
+  "name": "Dungeon Config",
+  "description": "A Minecraft Dungeons styled config library: JSON5 configs in config/<modid>, a settings screen with backgrounds and music, and server synced settings.",
+  "authors": [
+    "frikinjay"
+  ],
+  "contact": {
+    "homepage": "https://github.com/frikinjay/dungeonconfig"
+  },
+  "license": "LGPL3.0",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "com.frikinjay.dungeonconfig.fabric.DungeonConfigFabric"
+    ],
+    "client": [
+      "com.frikinjay.dungeonconfig.fabric.client.DungeonConfigFabricClient"
+    ],
+    "modmenu": [
+      "com.frikinjay.dungeonconfig.fabric.ModMenuIntegration"
+    ]
+  },
+  "mixins": [
+    "dungeonconfig.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.18.6",
+    "minecraft": ">=26.1.2",
+    "java": ">=25",
+    "fabric-api": "*"
+  },
+  "suggests": {
+    "modmenu": ">=18.0.2"
+  },
+  "custom": {
+    "modmenu": {
+      "badges": ["library"]
+    }
+  }
+}

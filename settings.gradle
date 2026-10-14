@@ -1,0 +1,15 @@
+pluginManagement {
+    repositories {
+        maven { url "https://maven.fabricmc.net/" }
+        maven { url "https://maven.architectury.dev/" }
+        maven { url "https://files.minecraftforge.net/maven/" }
+        maven { url "https://maven.neoforged.net/" }
+        gradlePluginPortal()
+    }
+}
+
+rootProject.name = 'dungeonconfig'
+
+include 'common'
+include 'fabric'
+include 'neoforge'
